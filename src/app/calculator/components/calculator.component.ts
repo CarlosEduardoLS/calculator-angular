@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CalculatorService } from '../services';
 
 @Component({
   selector: 'app-calculator',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calculator.component.css'],
 })
 export class CalculatorComponent implements OnInit {
-  constructor() {}
+  constructor(private calculatorService: CalculatorService) {}
 
   ngOnInit(): void {}
 }
